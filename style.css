@@ -164,7 +164,7 @@ h1 {
     margin: 0 auto;
 }
 
-.fotos__flex>div {
+.fotos__flex > div {
     flex: 1 1 200px;
     margin: 10px;
 }
