@@ -1,0 +1,63 @@
+body, ul, li, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    background: #1d1e20;
+    display: flex;
+    flex-wrap: wrap; /*quando ficar pequeno isso vai para baixo*/
+    justify-content: space-between;/*vai para a direita como se fosse float right*/
+    align-items: center;
+    padding: 20px;
+}
+.header__menu{
+    display: flex; /*vai deixar o menu em row*/
+}
+.header__menu li{
+    margin-left: 20px;
+}
+.header__menu li a{
+    display: block;
+    padding: 10px;
+}
+/*Em cima eu tenho um menu completinho*/
+
+/*Flexbox 1*/
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+img{/*assim a imagem fica flex*/
+    max-width: 100%;
+    display: block;
+}
+#flex{
+    display: flex; /*fez as img ficarem em row*/
+    
+    max-width: 800px;/*limitou o box a 800px*/
+    margin: 0 auto;/*centralizou as imagens*/
+}
+/*vai redimensionar as imagens*/
+/*tem que indicar no flex para o flex-wrap que ele é wrap*/
+#flex > div {
+    flex: 1 1 200px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+#flex .textos {
+    float: left;
+}
+
+
+
+
